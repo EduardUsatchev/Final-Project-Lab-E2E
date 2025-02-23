@@ -1,0 +1,11 @@
+groups:
+- name: sample-app-alerts
+  rules:
+  - alert: HighCPULoad
+    expr: sum(rate(container_cpu_usage_seconds_total{pod=~"sample-app.*"}[1m])) by (pod) > 80
+    for: 2m
+    labels:
+      severity: critical
+    annotations:
+      summary: "High CPU load on {{ $labels.pod }}"
+      description: "CPU usage is above 80 for over 2 minutes."

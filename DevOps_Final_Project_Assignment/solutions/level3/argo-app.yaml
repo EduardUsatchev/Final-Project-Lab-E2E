@@ -1,14 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: sample-app
+  name: final-project-lab
   namespace: argocd
 spec:
-  destination:
-    namespace: default
-    server: https://kubernetes.default.svc
-  source:
-    repoURL: 'https://github.com/yourorg/sample-app-config.git'
-    path: helm/sample-app
-    targetRevision: HEAD
   project: default
+  source:
+    repoURL: "https://github.com/EduardUsatchev/Final-Project-Lab-E2E.git"
+    targetRevision: HEAD
+    path: solutions/level1
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: devops-lab
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
