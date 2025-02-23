@@ -120,13 +120,14 @@ Present a solution that addresses the identified challenges by:
 
 **Bonus Files (Optional):**
 - `advanced.tf`  
-  *(Additional Terraform configuration for a high-availability, auto-scaling, multi-AZ architecture with an Application Load Balancer.)*
+  *(Additional Terraform configuration for a more advanced architecture.)*
 - An updated architecture diagram showing the enhanced infrastructure.
 - A bonus report explaining your design decisions and cost optimization strategies.
 
 **Submission Instructions for Level 4:**
 - Submit your Terraform configuration file(s) along with documentation confirming the successful deployment.
 - Include bonus files and diagrams if you implemented the bonus assignment.
+
 
 ---
 

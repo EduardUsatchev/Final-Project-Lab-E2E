@@ -1,5 +1,4 @@
-global:
-  resolve_timeout: 5m
+global: {}
 
 route:
   group_wait: 30s
@@ -9,5 +8,3 @@ route:
 
 receivers:
   - name: "devops-team"
-    email_configs:
-      - to: "devops@example.com"

@@ -1,11 +1,11 @@
 groups:
 - name: sample-app-alerts
   rules:
-  - alert: HighCPULoad
-    expr: sum(rate(container_cpu_usage_seconds_total{pod=~"sample-app.*"}[1m])) by (pod) > 80
-    for: 2m
+  - alert: AlwaysFiringTestAlert
+    expr: vector(1) > 0
+    for: 0s
     labels:
       severity: critical
     annotations:
-      summary: "High CPU load on {{ $labels.pod }}"
-      description: "CPU usage is above 80 for over 2 minutes."
+      summary: "Always firing test alert"
+      description: "This alert is automatically triggered for testing purposes."
