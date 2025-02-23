@@ -1,0 +1,8 @@
+replicaCount: 3
+image:
+  repository: sample-app
+  tag: latest
+  pullPolicy: Never
+service:
+  type: ClusterIP
+  port: 80
