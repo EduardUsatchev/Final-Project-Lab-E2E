@@ -1,0 +1,39 @@
+# Virtual environment
+venv/
+*.venv/
+
+# Python cache and artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Docker artifacts
+*.tar
+docker-compose.override.yml
+
+# Kubernetes and Helm artifacts
+*.yaml~
+*.bak
+
+# Terraform files
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE configuration
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# Git ignore file for local configuration
+.gitignore
