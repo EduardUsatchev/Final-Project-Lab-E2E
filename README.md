@@ -132,16 +132,3 @@ If you face issues:
    tail -f /var/log/syslog
    ```
 
----
-## **Contributing**
-Feel free to contribute by:
-- Submitting pull requests
-- Reporting issues
-- Suggesting improvements
-
-## **License**
-This project is licensed under the **MIT License**.
-
----
-**Happy Deploying! 🚀**
-
